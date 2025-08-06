@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
   <head>
-    {{ if not .Site.IsServer }}
+    {{ if not hugo.IsServer }}
     {{ partial "gtag.html" . }}
     {{ partial "adsense.html" . }}
     {{ end }}
